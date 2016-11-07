@@ -9,4 +9,5 @@ RUN git clone --recursive https://github.com/espressif/esp-idf.git
 ENV IDF_PATH=/esp/esp-idf
 VOLUME /COM
 VOLUME /proj
+WORKDIR /proj
 CMD ["make flash"]
