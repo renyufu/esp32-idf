@@ -1,4 +1,5 @@
 FROM ubuntu
+RUN apt-get update
 RUN apt-get install -y git wget make libncurses-dev flex bison gperf python python-serial
 RUN mkdir /esp
 WORKDIR /esp
