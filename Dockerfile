@@ -11,4 +11,4 @@ ENV IDF_PATH=/esp/esp-idf
 VOLUME /dev/ttyS0
 VOLUME /proj
 WORKDIR /proj
-CMD ["make"]
+ENTRYPOINT ["make"]
